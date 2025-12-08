@@ -1,12 +1,12 @@
 import javax.swing.*;
 
 public class Suma {
-    private JPanel pan;
     private JButton button1;
     private JTextField textField1;
     private JTextField textField2;
     private JLabel resultadoLabel;
     private JLabel sumar2NumerosLabel;
+    private JPanel pan;
     public JPanel getPanelPrincipal() {
         return pan;
     }

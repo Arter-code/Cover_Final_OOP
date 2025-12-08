@@ -28,5 +28,19 @@ public class MenuP {
 
             }
         });
+        transformacionesMayúsculasMinúsculasInvertirButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(() -> {
+                    JFrame frame = new JFrame("Transformaciones");
+                    frame.setContentPane(new Transformaciones().getPanelPrincipal());
+                    frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                    frame.pack();
+                    frame.setLocationRelativeTo(null);
+                    frame.setVisible(true);
+                });
+
+            }
+        });
     }
 }
