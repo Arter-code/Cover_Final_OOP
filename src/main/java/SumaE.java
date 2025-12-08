@@ -15,16 +15,20 @@ public class SumaE {
     public SumaE(){
         calcularButton.addActionListener(e -> {
             try {
-                int numero = Integer.parseInt(textField1.getText());
-                String texto = String.valueOf(numero);
-                int[] numero1 = new int[texto.length()];
-                for (int i = 0; i < texto.length(); i++) {
-                    numero1[i] = Character.getNumericValue(texto.charAt(i));
+                String texto = textField1.getText();
+                String[] arreglo = texto.split(",");
+
+                for (int i = 0; i < arreglo.length; i++) {
+                    arreglo[i] = arreglo[i].trim();
                 }
-                int resultado = Workshop.sumaElementos(numero1);
-                double resultado2= Workshop.promedioElementos(numero1);
-                int resultado3= Workshop.encontrarElementoMayor(numero1);
-                int resultado4= Workshop.encontrarElementoMenor(numero1);
+                int[] numeros = new int[arreglo.length];
+                for (int i = 0; i < arreglo.length; i++) {
+                    numeros[i] = Integer.parseInt(arreglo[i]);
+                }
+                int resultado = Workshop.sumaElementos(numeros);
+                double resultado2= Workshop.promedioElementos(numeros);
+                int resultado3= Workshop.encontrarElementoMayor(numeros);
+                int resultado4= Workshop.encontrarElementoMenor(numeros);
                 sumaDeElementosLabel.setText("Suma de elementos: " + resultado);
                 promedioDeElementosLabel.setText("Promedio de elementos: "+ resultado2);
                 elementoMayorLabel.setText("Elemento mayor: "+ resultado3);

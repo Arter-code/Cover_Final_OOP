@@ -12,14 +12,20 @@ public class BusquedaE {
     public BusquedaE(){
         buscarButton.addActionListener(e -> {
             try {
-                int numero = Integer.parseInt(textField1.getText());
-                String texto = String.valueOf(numero);
-                int[] numero1 = new int[texto.length()];
-                for (int i = 0; i < texto.length(); i++) {
-                    numero1[i] = Character.getNumericValue(texto.charAt(i));
+                String texto = textField1.getText();
+                String[] arreglo = texto.split(",");
+
+                for (int i = 0; i < arreglo.length; i++) {
+                    arreglo[i] = arreglo[i].trim();
                 }
+                int[] numeros = new int[arreglo.length];
+                for (int i = 0; i < arreglo.length; i++) {
+                    numeros[i] = Integer.parseInt(arreglo[i]);
+                }
+
+
                 int numero2 = Integer.parseInt(textField2.getText());
-                boolean resultado = Workshop.buscarElemento(numero1,numero2);
+                boolean resultado = Workshop.buscarElemento(numeros,numero2);
                 if (resultado){
                     entraEnLaPosicionLabel.setText("El elemento se encuentra en el arreglo");
                 } else {
