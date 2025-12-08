@@ -28,5 +28,19 @@ public class MenuO {
 
             }
         });
+        button5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(() -> {
+                    JFrame frame = new JFrame("Area");
+                    frame.setContentPane(new AC().getPanelPrincipal());
+                    frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                    frame.pack();
+                    frame.setLocationRelativeTo(null);
+                    frame.setVisible(true);
+                });
+
+            }
+        });
     }
 }

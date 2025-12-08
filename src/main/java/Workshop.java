@@ -261,8 +261,9 @@ Rock crushes Scissors
         return "";
     }
 
-    public double areaCirculo(double radio) {
-        return 0.0;
+    public static double areaCirculo(double radio) {
+        double area=Math.PI*Math.pow(radio,2);
+        return area;
     }
 
     public String zoodiac(int day, int month) {
