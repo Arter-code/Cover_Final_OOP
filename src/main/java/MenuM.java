@@ -57,5 +57,19 @@ public class MenuM {
 
             }
         });
+        operacionesDisponiblesOrdenarInvertirButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(() -> {
+                    JFrame frame = new JFrame("Operaciones");
+                    frame.setContentPane(new Invertir().getPanelPrincipal());
+                    frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                    frame.pack();
+                    frame.setLocationRelativeTo(null);
+                    frame.setVisible(true);
+                });
+
+            }
+        });
     }
 }

@@ -128,10 +128,16 @@ public class Workshop {
     }
 
     // Método que invierte un arreglo
-    public int[] invertirArreglo(int[] arreglo) {
+    public static int[] invertirArreglo(int[] arreglo) {
         // TODO: Implementar el método para invertir un arreglo.
         // Ejemplo: Si arreglo = [1, 2, 3, 4, 5], el resultado debería ser [5, 4, 3, 2, 1].
-        return new int[0];
+        int[] ars= new int[arreglo.length];
+        int c=0;
+        for (int i = arreglo.length-1; i>=0; i--) {
+            ars[c]=arreglo[i];
+            c++;
+        }
+        return ars;
     }
 
     // Método que ordena un arreglo en orden ascendente
