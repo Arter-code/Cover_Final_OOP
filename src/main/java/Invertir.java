@@ -32,6 +32,7 @@ public class Invertir {
                 }
                 String resultadoi = sb.toString();
                 dfssd.setText(" "+resultadoi);
+
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(
                         null,
