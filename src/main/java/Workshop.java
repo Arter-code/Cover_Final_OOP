@@ -1,12 +1,20 @@
 import java.util.List;
-
+import javax.swing.*;
 public class Workshop {
     public static void main(String[] args) {
-
+            SwingUtilities.invokeLater(MenuPrincipal::new);
+            SwingUtilities.invokeLater(() -> {
+                JFrame frame = new JFrame("MenuPrin");
+                frame.setContentPane(new MenuPrincipal().getPanelPrincipal());
+                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.pack();
+                frame.setLocationRelativeTo(null);
+                frame.setVisible(true);
+            });
     }
 
     // Método que suma dos números enteros
-    public int sumarDosNumeros(int a, int b) {
+    public static int sumarDosNumeros(int a, int b) {
         // TODO: Implementar el método para retornar la suma de dos números enteros.
         // Ejemplo: Si a = 3 y b = 5, el resultado debería ser 8.
         return a+b;
