@@ -89,17 +89,29 @@ public class Workshop {
     }
 
     // Método que encuentra el elemento mayor en un arreglo
-    public int encontrarElementoMayor(int[] arreglo) {
+    public static int encontrarElementoMayor(int[] arreglo) {
         // TODO: Implementar el método para encontrar el elemento mayor en un arreglo.
         // Ejemplo: Si arreglo = [1, 2, 3, 4, 5], el resultado debería ser 5.
-        return 0;
+        int a=arreglo[0];
+        for (int i = 0; i < arreglo.length; i++) {
+            if (a<arreglo[i]){
+                a=arreglo[i];
+            }
+        }
+        return a;
     }
 
     // Método que encuentra el elemento menor en un arreglo
-    public int encontrarElementoMenor(int[] arreglo) {
+    public static int encontrarElementoMenor(int[] arreglo) {
         // TODO: Implementar el método para encontrar el elemento menor en un arreglo.
         // Ejemplo: Si arreglo = [1, 2, 3, 4, 5], el resultado debería ser 1.
-        return 0;
+        int a=arreglo[0];
+        for (int i = 0; i < arreglo.length; i++) {
+            if (a>arreglo[i]){
+                a=arreglo[i];
+            }
+        }
+        return a;
     }
 
     // Método que busca un elemento en un arreglo

@@ -6,6 +6,8 @@ public class SumaE {
     private JPanel pan;
     private JLabel sumaDeElementosLabel;
     private JLabel promedioDeElementosLabel;
+    private JLabel elementoMayorLabel;
+    private JLabel elementoMenorLabel;
 
     public JPanel getPanelPrincipal() {
         return pan;
@@ -21,8 +23,12 @@ public class SumaE {
                 }
                 int resultado = Workshop.sumaElementos(numero1);
                 double resultado2= Workshop.promedioElementos(numero1);
+                int resultado3= Workshop.encontrarElementoMayor(numero1);
+                int resultado4= Workshop.encontrarElementoMenor(numero1);
                 sumaDeElementosLabel.setText("Suma de elementos: " + resultado);
                 promedioDeElementosLabel.setText("Promedio de elementos: "+ resultado2);
+                elementoMayorLabel.setText("Elemento mayor: "+ resultado3);
+                elementoMenorLabel.setText("Elemento menor: "+ resultado4);
 
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(
