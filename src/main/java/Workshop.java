@@ -21,10 +21,18 @@ public class Workshop {
     }
 
     // Método que encuentra el mayor de tres números enteros
-    public int mayorDeTresNumeros(int a, int b, int c) {
+    public static int mayorDeTresNumeros(int a, int b, int c) {
         // TODO: Implementar el método para retornar el mayor de los tres números enteros.
         // Ejemplo: Si a = 3, b = 7, y c = 5, el resultado debería ser 7.
-        return 0;
+        int m=0;
+        if (a>b && a>c || a==b && a>c || a==c && a>b){
+            m=a;
+        } else if (c > b || c == b && c > a){
+            m=c;
+        } else if (b > a){
+            m=b;
+        }
+        return m;
     }
 
     // Método que retorna la tabla de multiplicar de un número

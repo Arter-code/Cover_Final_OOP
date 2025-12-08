@@ -9,11 +9,7 @@ import java.util.List;
 
 //import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
-
 //import JUNIT 4
-
-
-
 public class WorkshopTest {
 
     private final Workshop tester = new Workshop();
