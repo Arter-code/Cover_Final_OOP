@@ -5,6 +5,7 @@ public class SumaE {
     private JButton calcularButton;
     private JPanel pan;
     private JLabel sumaDeElementosLabel;
+    private JLabel promedioDeElementosLabel;
 
     public JPanel getPanelPrincipal() {
         return pan;
@@ -19,7 +20,10 @@ public class SumaE {
                     numero1[i] = Character.getNumericValue(texto.charAt(i));
                 }
                 int resultado = Workshop.sumaElementos(numero1);
+                double resultado2= Workshop.promedioElementos(numero1);
                 sumaDeElementosLabel.setText("Suma de elementos: " + resultado);
+                promedioDeElementosLabel.setText("Promedio de elementos: "+ resultado2);
+
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(
                         null,
