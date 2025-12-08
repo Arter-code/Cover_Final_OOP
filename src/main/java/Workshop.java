@@ -136,10 +136,11 @@ public class Workshop {
     }
 
     // Método que cuenta los caracteres en una cadena
-    public int contarCaracteres(String cadena) {
+    public static int contarCaracteres(String cadena) {
         // TODO: Implementar el método para contar el número de caracteres en una cadena.
         // Ejemplo: Si cadena = "Hello", el resultado debería ser 5.
-        return 0;
+        char[] caracteres = cadena.toCharArray();
+        return caracteres.length;
     }
 
     // Método que invierte una cadena
@@ -157,7 +158,7 @@ public class Workshop {
     }
 
     // Método que cuenta el número de palabras en una cadena
-    public int contarPalabras(String cadena) {
+    public static int contarPalabras(String cadena) {
         // TODO: Implementar el método para contar el número de palabras en una cadena.
         // Ejemplo: Si cadena = "Este es un test", el resultado debería ser 4.
         return 0;

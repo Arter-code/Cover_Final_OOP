@@ -22,9 +22,9 @@ public class MenuPrincipal extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 SwingUtilities.invokeLater(() -> {
-                    JFrame frame = new JFrame("Mi Ventana Swing");
+                    JFrame frame = new JFrame("Operaciones");
                     frame.setContentPane(new MenuO().getPanelPrincipal());
-                    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                     frame.pack();
                     frame.setLocationRelativeTo(null); // Centra la ventana
                     frame.setVisible(true);
@@ -36,9 +36,23 @@ public class MenuPrincipal extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 SwingUtilities.invokeLater(() -> {
-                    JFrame frame = new JFrame("Mi Ventana Swing");
+                    JFrame frame = new JFrame("Arreglos");
                     frame.setContentPane(new MenuM().getPanelPrincipal());
-                    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                    frame.pack();
+                    frame.setLocationRelativeTo(null); // Centra la ventana
+                    frame.setVisible(true);
+                });
+
+            }
+        });
+        button3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(() -> {
+                    JFrame frame = new JFrame("Cadenas");
+                    frame.setContentPane(new MenuP().getPanelPrincipal());
+                    frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                     frame.pack();
                     frame.setLocationRelativeTo(null); // Centra la ventana
                     frame.setVisible(true);

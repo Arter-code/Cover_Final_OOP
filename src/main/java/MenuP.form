@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MenuP">
+  <grid id="27dc6" binding="pan" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="9aa7e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Procesamiento de Cadenas"/>
+        </properties>
+      </component>
+      <component id="ff07d" class="javax.swing.JButton" binding="campoDeTextoMultilineaButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Campo de texto multilinea para cadenas largas"/>
+        </properties>
+      </component>
+      <component id="e6aa6" class="javax.swing.JButton" binding="transformacionesMayúsculasMinúsculasInvertirButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Transformaciones: mayúsculas, minúsculas, invertir"/>
+        </properties>
+      </component>
+      <component id="a05ad" class="javax.swing.JButton" binding="verificaciónDePalíndromosButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Verificación de palíndromos"/>
+        </properties>
+      </component>
+      <component id="97cc" class="javax.swing.JButton" binding="contadorDeCaracteresYButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Contador de caracteres y palabras"/>
+        </properties>
+      </component>
+      <component id="ddf39" class="javax.swing.JButton" binding="búsquedaYReemplazoDeButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Búsqueda y reemplazo de subcadenas"/>
+        </properties>
+      </component>
+      <component id="327bb" class="javax.swing.JButton" binding="validadorDeCorreosElectrónicosButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Validador de correos electrónicos con retroalimentación visual"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
