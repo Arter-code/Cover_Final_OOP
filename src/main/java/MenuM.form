@@ -5,7 +5,9 @@
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <preferredSize width="500" height="500"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="960f8" class="javax.swing.JLabel">
@@ -18,7 +20,7 @@
       </component>
       <component id="84188" class="javax.swing.JButton" binding="entradaDeArreglosMedianteButton" default-binding="true">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Entrada de arreglos mediante texto separado por comas"/>
@@ -26,7 +28,7 @@
       </component>
       <component id="508a4" class="javax.swing.JButton" binding="visualizaciónDelArregloOriginalButton" default-binding="true">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Visualización del arreglo original y el resultado"/>
@@ -34,7 +36,7 @@
       </component>
       <component id="26da3" class="javax.swing.JButton" binding="operacionesDisponiblesOrdenarInvertirButton" default-binding="true">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Operaciones disponibles: ordenar, invertir, eliminar duplicados, rotar"/>
@@ -42,7 +44,7 @@
       </component>
       <component id="3204f" class="javax.swing.JButton" binding="búsquedaDeElementosButton" default-binding="true">
         <constraints>
-          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Búsqueda de elementos"/>
@@ -50,7 +52,7 @@
       </component>
       <component id="3ee41" class="javax.swing.JButton" binding="cálculoDeMayorMenorButton" default-binding="true">
         <constraints>
-          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Mayor de 3 numeros"/>
@@ -58,7 +60,7 @@
       </component>
       <component id="e6af" class="javax.swing.JButton" binding="cálculoDeMayorMenorButton2">
         <constraints>
-          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Cálculo de mayor, menor, suma y promedio"/>
