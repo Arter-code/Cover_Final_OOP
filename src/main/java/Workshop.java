@@ -39,7 +39,11 @@ public class Workshop {
     public int[] tablaMultiplicar(int numero, int limite) {
         // TODO: Implementar el método para retornar la tabla de multiplicar del número dado.
         // Ejemplo: Si numero = 2 y limite = 5, el resultado debería ser [2, 4, 6, 8, 10].
-        return new int[0];
+        int[] tabla = new int[limite];
+        for (int i = 0; i < tabla.length; i++) {
+            tabla[i]=numero*(i+1);
+        }
+        return tabla;
     }
 
     // Método que calcula el factorial de un número entero
@@ -199,7 +203,16 @@ public class Workshop {
     public static int contarPalabras(String cadena) {
         // TODO: Implementar el método para contar el número de palabras en una cadena.
         // Ejemplo: Si cadena = "Este es un test", el resultado debería ser 4.
-        return 0;
+        char[] caracteres = cadena.toCharArray();
+        int c=0;
+        char l=' ';
+        for (int i = 0; i < caracteres.length; i++) {
+            if (caracteres[i]!=' ' && l==' '){
+                c++;
+            }
+            l=caracteres[i];
+        }
+        return c;
     }
 
     // Método que convierte una cadena a mayúsculas
