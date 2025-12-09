@@ -232,18 +232,84 @@ public class Workshop {
     }
 
     // Método que reemplaza una subcadena en una cadena por otra subcadena
-    public String reemplazarSubcadena(String cadena, String antiguaSubcadena, String nuevaSubcadena) {
+    public static String reemplazarSubcadena(String cadena, String subcadena, String nuevaSubcadena) {
         // TODO: Implementar el método para reemplazar una subcadena en una cadena por otra subcadena.
         // Ejemplo: Si cadena = "Hello Java", antiguaSubcadena = "Java", y nuevaSubcadena = "world", el resultado debería ser "Hello world".
+        char[] a=cadena.toCharArray();
+        char[] b=subcadena.toCharArray();
+        int c=0;
+        int f=0;
+        boolean encontrar=false;
+        StringBuilder d= new StringBuilder();
+        StringBuilder ab= new StringBuilder();
+        for (char value : a) {
+            ab.append(value);
+        }
+        for (int i = 0; i < a.length; i++) {
+            if (a[i]==b[f]){
+                d.append(a[i]);
+                if (f==0){
+                    c=i;
+                }
+                f++;
+            } else {
+                f=0;
+                d = new StringBuilder();
+                if (a[i]==b[f]){
+                    d.append(a[i]);
+                    c = i;
+                    f++;
+                }
+            }
+            if (d.toString().equals(subcadena)){
+                int fin = c + subcadena.length();
+                ab.delete(c, fin);
+                ab.insert(c,nuevaSubcadena);
+                encontrar=true;
+                break;
+            }
+        }
+        String resultado=ab.toString();
+        if (encontrar) {
+            return resultado;
+        }
         return "";
     }
 
     // Método que busca una subcadena en una cadena y retorna su índice
-    public int buscarSubcadena(String cadena, String subcadena) {
+    public static int buscarSubcadena(String cadena, String subcadena) {
         // TODO: Implementar el método para buscar una subcadena en una cadena y retornar su índice.
         // Ejemplo: Si cadena = "Hello world" y subcadena = "world", el resultado debería ser 6.
-        return -1;
-    }
+        char[] a=cadena.toCharArray();
+        char[] b=subcadena.toCharArray();
+        int c=0;
+        int f=0;
+        StringBuilder d= new StringBuilder();
+        for (int i = 0; i < a.length; i++) {
+            if (a[i]==b[f]){
+                d.append(a[i]);
+                if (f==0){
+                    c=i;
+                }
+                f++;
+            } else {
+                f=0;
+                d = new StringBuilder();
+                if (a[i]==b[f]){
+                    d.append(a[i]);
+                    c = i;
+                    f++;
+                }
+            }
+            if (d.toString().equals(subcadena)){
+                break;
+            }
+        }
+            if (d.toString().equals(subcadena)) {
+                return c;
+            }
+            return -1;
+        }
 
     // Método que valida un correo electrónico
     public boolean validarCorreoElectronico(String correo) {

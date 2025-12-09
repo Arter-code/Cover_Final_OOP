@@ -42,5 +42,19 @@ public class MenuP {
 
             }
         });
+        búsquedaYReemplazoDeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(() -> {
+                    JFrame frame = new JFrame("Busqueda");
+                    frame.setContentPane(new Busqueda().getPanelPrincipal());
+                    frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                    frame.pack();
+                    frame.setLocationRelativeTo(null);
+                    frame.setVisible(true);
+                });
+
+            }
+        });
     }
 }

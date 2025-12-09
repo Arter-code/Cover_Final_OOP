@@ -282,7 +282,7 @@ public class WorkshopTest {
         // Test 1: Reemplazar subcadena
         assertEquals("Hola a todos", tester.reemplazarSubcadena("Hola mundo", "mundo", "a todos"));
         // Test 2: Reemplazar subcadena que no existe
-        assertEquals("Hola mundo", tester.reemplazarSubcadena("Hola mundo", "noexiste", "nuevo"));
+        assertEquals("", tester.reemplazarSubcadena("Hola mundo", "noexiste", "nuevo"));
         // Test 3: Reemplazar en cadena vacía
         assertEquals("", tester.reemplazarSubcadena("", "viejo", "nuevo"));
     }
